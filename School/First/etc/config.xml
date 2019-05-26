@@ -9,11 +9,11 @@
         <events>
             <controller_front_init_routers>
                 <observers>
-                    <first_school_model_observer>
+                    <school_first_model_observer>
                         <type>singleton</type>
-                        <class>First_School_Model_Observer</class>
+                        <class>School_First_Model_Observer</class>
                         <method>checkForConfigRequest</method>
-                    </first_school_model_observer>
+                    </school_first_model_observer>
                 </observers>
             </controller_front_init_routers>
         </events>

@@ -1,6 +1,6 @@
 <?php
 
-class First_School_Model_Observer {
+class School_First_Model_Observer {
 
     const FLAG_SHOW_CONFIG = 'showConfig';
     const FLAG_SHOW_CONFIG_FORMAT = 'showConfigFormat';
