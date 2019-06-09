@@ -1,0 +1,39 @@
+<config>
+    <modules>
+        <School_Weblog>
+            <version>0.1.0</version>
+        </School_Weblog>
+    </modules>
+    <global>
+        <!-- ... -->
+        <models>
+            <weblog>
+                <class>School_Weblog_Model</class>
+                <!--
+                нужно создать свой собственный ресурс, нельзя просто использовать core_resource
+                -->
+                <resourceModel>weblog_resource</resourceModel>
+            </weblog>
+            <weblog_resource>
+                <class>School_Weblog_Model_Resource</class>
+            </weblog_resource>
+            <weblog_resource>
+                <class>School_Weblog_Model_Resource</class>
+                <entities>
+                    <blogpost>
+                        <table>blog_posts</table>
+                    </blogpost>
+                </entities>
+            </weblog_resource>
+        </models>
+        <resources>
+            <weblog_setup>
+                <setup>
+                    <module>School_Weblog</module>
+                    <class>School_Weblog_Model_Resource_Setup</class>
+                </setup>
+            </weblog_setup>
+        </resources>
+        <!-- ... -->
+    </global>
+</config>
