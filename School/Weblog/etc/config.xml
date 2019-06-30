@@ -33,6 +33,16 @@
                 </entities>
             </weblog_resource>
         </models>
+
+        <resources>
+            <weblog_setup>
+                <setup>
+                    <module>School_Weblog</module>
+                    <class>School_Weblog_Model_Resource_Setup</class>
+                </setup>
+            </weblog_setup>
+        </resources>
+
     </global>
 
 
